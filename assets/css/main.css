@@ -1116,7 +1116,7 @@ section,
 
 .card {
   flex: 0 0 auto;
-  width: 20rem; /* balanced size for desktop */
+  width: 30rem; /* balanced size for desktop */
   scroll-snap-align: start;
   background: white;
   border: 1px solid #ddd;
