@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Harshit Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Harshit S — Portfolio</title>
+  <meta name="description" content="Harshit S — Computer Science Engineer & AI Enthusiast. Building intelligent systems with Machine Learning, Deep Learning, and LLMs.">
+  <meta name="keywords" content="AI Engineer, Machine Learning, Deep Learning, LLM, Python, PyTorch, TensorFlow, Portfolio, Harshit S">
 
   <!-- Favicons -->
   <link href="assets/img/favicon-1.png" rel="icon">
@@ -15,319 +15,422 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Inline theme script (prevents flash) -->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
 
 </head>
 
 <body class="index-page">
 
+  <!-- Ambient glass background — colorful orbs + film grain -->
+  <div class="bg-orbs" aria-hidden="true">
+    <i class="bg-orb-1"></i>
+    <i class="bg-orb-2"></i>
+    <i class="bg-orb-3"></i>
+    <i class="bg-orb-4"></i>
+  </div>
+  <div class="bg-grain" aria-hidden="true"></div>
+
+  <!-- PreText Preloader -->
+  <div class="pretext-overlay">
+    <div class="pretext" data-text="Harshit S  AI Engineer"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
+
+  <!-- Header -->
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Harshit S</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="magnet-lines-container" data-target-container="nav#navmenu">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <div class="header-social-links">
-        <a href="mailto:harshitharshit138@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/harshit-s-apr2604" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/Harshit26042004" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://twitter.com/Harshit_S_264" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.instagram.com/_.harshit_26._/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <div class="header-social-links d-flex align-items-center">
+        <a href="mailto:harshit.subramanian26@gmail.com" class="email magnetic"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/harshit-subramanian" class="linkedin magnetic"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Harshit26042004" class="github magnetic"><i class="bi bi-github"></i></a>
+        <button id="theme-toggle" class="theme-toggle magnetic" aria-label="Toggle dark mode">
+          <i class="bi bi-moon"></i>
+        </button>
       </div>
 
     </div>
   </header>
 
   <main class="main">
-  <section id="home" class="hero section" style="height:60%;">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row align-items-center content">
-        
-        <!-- Left Column: Profile Image -->
-        <div class="col-12 col-md-6">
-          <div class="hero-image">
-            <img src="assets/img/profile/Harshit_S.png" alt="Profile Image" class="img-fluid rounded-5" width="300">
-            <div class="shape-1"></div>
-            <div class="shape-2"></div>
-          </div>
-        </div>
 
-        <!-- Right Column: Intro Text -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <h2>Hi! I'm Harshit</h2>
-          <h3><b>Computer Science Engineer | AI Enthusiast</b></h3>
-          <p class="lead">
-            A Computer Science graduate with Strong DSA and Exploring Machine Learning and Deep Learning
-          </p>
-          <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-            <a href="#contact" class="btn btn-outline">Let's Connect</a>
-          </div>
-        </div>
+   <!-- Hero Section -->
+    <section id="home" class="hero section hero-full">
 
+      <!-- Particle Typography Background -->
+      <div class="particle-typography hero-particle-text" data-font-size="48" style="opacity: 0.06;">AI ENGINEER</div>
+
+      <!-- Canvas Particle Network -->
+      <div class="hero-canvas-container">
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
       </div>
-    </div>
-  </section>
 
+      <div class="container hero-container" data-aos="fade-up" data-aos-delay="100" data-scroll data-scroll-delay="200">
+        <div class="row align-items-center content hero-content">
+          <div class="col-12 col-md-6 hero-text-col">
+            <!-- <div class="availability-badge">Available for Opportunities</div> -->
+            <span class="hero-subtitle decrypted-text magnetic" data-text="Computer Science Engineer  AI Enthusiast" data-speed="40" data-animate-on="load"></span>
+            <h2 id="hero-title" class="hero-title-split">
+              <span class="split-line" data-split-line>Hi! I'm Harshit</span>
+            </h2>
+            <p class="lead">
+              A Computer Science graduate with strong foundation in DSA and exploring Machine Learning, Deep Learning, and LLM fine-tuning.
+            </p>
+            <div class="cta-buttons">
+              <a href="#projects" class="btn btn-primary btn-animated magnetic">View My Work <i class="bi bi-arrow-right-short"></i></a>
+              <a href="#contact" class="btn btn-outline btn-animated magnetic">Let's Connect</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 hero-image-col" data-scroll data-scroll-delay="100">
+            <div class="hero-image magnet-lines-container" data-target-container=".hero-image">
+              <div class="lanyard">
+                <div class="lanyard-strap"></div>
+                <div class="lanyard-inner">
+                  <div class="lanyard-face lanyard-front">
+                    <img src="assets/img/profile/Harshit_S.png" alt="Harshit S - AI Engineer" class="img-fluid rounded-4">
+                  </div>
+                  <div class="lanyard-face lanyard-back">
+                    <div class="lanyard-back-content">
+                      <h3 class="lanyard-title">Software Developer</h3>
+                      <p class="lanyard-desc">Backend Systems • AI Integration • Deep Learning</p>
+                      <div class="lanyard-tags">
+                        <span class="lanyard-tag">Python</span>
+                        <span class="lanyard-tag">Django</span>
+                        <span class="lanyard-tag">PyTorch</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shape-1" data-parallax-speed="0.05"></div>
+              <div class="shape-2" data-parallax-speed="-0.03"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <div class="mouse-icon">
+          <span></span>
+        </div>
+      </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
+        <h2 class="text-pressure" data-pressure="scroll">About</h2>
         <div class="title-shape">
           <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
           </svg>
         </div>
         <p>A Computer Science Engineer with a strong foundation in problem-solving, data structures, and algorithms. I have hands-on experience in machine learning, deep learning, and fine-tuning language models through industry internships. Known for my analytical thinking and adaptability, I thrive in collaborative and fast-paced environments.</p>
-        <div id="hero" class="hero">
-            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a download="" href="assets\img\Harshit_S_AI_Engineer.pdf" class="btn btn-outline">
-                Download Resume <i class="bi bi-download"></i>
-              </a>
-            </div>
-          <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
-              <div class="stat-item">
-                <span class="stat-number" text-align="center">8.27</span>
-                <span class="stat-label">Aggregate <br>CGPA</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">4+</span>
-                <span class="stat-label">Projects</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">8+</span>
-                <span class="stat-label">Months <br>Experience</span>
-              </div>
-            </div>
+        <div class="cta-buttons">
+          <a download href="assets/img/Harshit_S_Resume.pdf" class="btn btn-primary">
+            Download Resume <i class="bi bi-download"></i>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">8.23</span>
+            <span class="stat-label">Aggregate CGPA</span>
           </div>
+          <div class="stat-item">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1.5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
       </div>
-      
-    </section><!-- /About Section -->
+    </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
+      <div class="skills-atmosphere" aria-hidden="true">
+        <div class="orbit-ring"></div>
+        <div class="orbit-ring orbit-ring--2"></div>
+        <div class="orbit-ring orbit-ring--3"></div>
+      </div>
+      <span class="skills-mega-text" aria-hidden="true">SKILLS</span>
+      <div class="skills-band" aria-hidden="true"></div>
+      <div class="skills-grid-bg" aria-hidden="true"></div>
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
+        <h2 class="text-pressure" data-pressure="scroll">Skills</h2>
       </div>
       <div class="container mt-4" data-aos="fade-up">
-        <h3>Languages:</h3>
-        <div>
-          <a href="#java" class="badge bg-danger text-light m-1">Java</a>
-          <a href="#python" class="badge bg-primary text-light m-1">Python</a>
-          <a href="#c" class="badge bg-secondary text-light m-1">C</a>
-          <a href="#sql" class="badge bg-info text-light m-1">SQL</a>
+
+        <div class="radar-chart-wrap" data-radar>
+          <div class="radar-sweep" aria-hidden="true"></div>
+          <div class="radar-chip radar-chip--top">Python <strong>95</strong></div>
+          <div class="radar-chip radar-chip--right">ML &amp; DL <strong>88</strong></div>
+          <div class="radar-chip radar-chip--bottom">Git <strong>85</strong></div>
+          <canvas class="radar-chart-canvas" data-radar-canvas></canvas>
+          <div class="radar-tooltip" data-radar-tooltip></div>
         </div>
 
-        <h3 class="mt-4">Tools:</h3>
-        <div>
-          <a href="#pyspark" class="badge bg-primary text-light m-1">Pyspark</a>
-          <a href="#pytorch" class="badge bg-danger text-light m-1">Pytorch</a>
-          <a href="#tensorflow" class="badge bg-warning text-dark m-1">Tensorflow</a>
-          <a href="#git" class="badge bg-secondary text-light m-1">Git</a>
-          <a href="#jupyter" class="badge bg-info text-dark m-1">Jupyter</a>
-          <a href="#intellij" class="badge bg-success text-dark m-1">IntelliJ IDEA</a>
+        <div class="radar-legend">
+          <span class="radar-legend-item"><i style="background:#ff7a00"></i>Languages</span>
+          <span class="radar-legend-item"><i style="background:#22c55e"></i>Specializations</span>
+          <span class="radar-legend-item"><i style="background:#7c3cff"></i>Tools &amp; Frameworks</span>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Skills Section -->
+      <!-- Experience Section -->
+     <section id="experience" class="resume section excavation-section">
+       <div class="container section-title" data-aos="fade-up">
+         <h2 class="text-pressure" data-pressure="scroll">Education &amp; Experience</h2>
+       </div>
+       <div class="container" data-aos="fade-up" data-aos-delay="100">
+         <div class="excavation-timeline" data-excavation>
+           <div class="excavation-ground"></div>
 
-    <!-- Resume Section -->
-    <section id="experience" class="resume section">
+           <div class="excavation-layer" data-year="2018">
+             <span class="excavation-year" aria-hidden="true">2018</span>
+                <div class="excavation-orbit" aria-hidden="true"></div>
+             <div class="excavation-content">
+               <h3><span class="excavation-content__year">2018</span>
+                Class 10<sup>th</sup></h3>
+               <span class="company">Kongu Vellalar Matric. Hr. Sec. School</span>
+               <span class="period">Jun, 2018 - May, 2019</span>
+               <p class="description">Completed 10<sup>th</sup> grade on Science, Mathematics, Social Science, English, Tamil with 92%</p>
+             </div>
+           </div>
+
+           <div class="excavation-layer" data-year="2020">
+             <span class="excavation-year" aria-hidden="true">2020</span>
+                <div class="excavation-orbit" aria-hidden="true"></div>
+             <div class="excavation-content">
+               <h3><span class="excavation-content__year">2020</span>
+                Class 12<sup>th</sup></h3>
+               <span class="company">Kongu Vellalar Matric. Hr. Sec. School</span>
+               <span class="period">Jun, 2020 - May, 2021</span>
+               <p class="description">Completed 12<sup>th</sup> grade on Computer Science, Physics, Chemistry, Mathematics, English, Tamil with 91%</p>
+             </div>
+           </div>
+
+           <div class="excavation-layer" data-year="2021">
+             <span class="excavation-year" aria-hidden="true">2021</span>
+                <div class="excavation-orbit" aria-hidden="true"></div>
+             <div class="excavation-content">
+               <h3><span class="excavation-content__year">2021</span>
+                BE - CSE</h3>
+               <span class="company">KPR Institute of Engineering and Technology</span>
+               <span class="period">Sept, 2021 - May, 2025</span>
+               <p class="description">Completed undergraduate degree in Computer Science with core concepts of DSA, Computer Networks, Operating System, and DBMS.</p>
+             </div>
+           </div>
+
+           <div class="excavation-layer" data-year="2023">
+             <span class="excavation-year" aria-hidden="true">2023</span>
+                <div class="excavation-orbit" aria-hidden="true"></div>
+             <div class="excavation-content">
+               <h3><span class="excavation-content__year">2023</span>
+                BE - CSE (AIML)</h3>
+               <span class="company">KPR Institute of Engineering and Technology</span>
+               <span class="period">Jun, 2023 - Dec, 2024</span>
+               <p class="description">Learned foundational concepts of ML algorithms, Neural Networks, CNN, Data Preprocessing, EDA, Feature Engineering for tabular, text, time-series, and image datasets.</p>
+             </div>
+           </div>
+
+           <div class="excavation-layer" data-year="2024">
+             <span class="excavation-year" aria-hidden="true">2024</span>
+                <div class="excavation-orbit" aria-hidden="true"></div>
+             <div class="excavation-content">
+               <h3><span class="excavation-content__year">2024</span>
+                AI Intern</h3>
+               <span class="company">Abluva Pvt. Limited</span>
+               <span class="period">Sept, 2024 - May, 2025</span>
+               <p class="description">Gained production-level expertise in Data Pipelines, Data Preprocessing and Engineering for ML models and Large Language Models (LLMs).</p>
+             </div>
+           </div>
+
+           <div class="excavation-layer" data-year="2025">
+             <span class="excavation-year" aria-hidden="true">2025</span>
+                <div class="excavation-orbit" aria-hidden="true"></div>
+             <div class="excavation-content">
+               <h3><span class="excavation-content__year">2025</span>
+                Software Engineer</h3>
+               <span class="company">Payoda Technologies Inc.</span>
+               <span class="period">Dec, 2025 - Present</span>
+               <p class="description">Building and deploying scalable Backend solutions with Django. Implementing AI in Healthcare with Advanced frameworks like PyTorch, Langchain, and LangGraph.</p>
+             </div>
+           </div>
+
+         </div>
+       </div>
+     </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
       <div class="container section-title" data-aos="fade-up">
-        <h2 style="padding-bottom: 30px;">Education & Experience</h2>
+        <h2 class="text-pressure" data-pressure="scroll">Projects</h2>
       </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="lanyard-grid">
 
-        <div class="row">
-          <div class="col-12">
-            <div class="resume-wrapper">
-              <div class="resume-block sec" data-aos="fade-up">
-
-                <div class="timeline">
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-left">
-                      <h4 class="company">Class 10<sup>th</sup></h4>
-                      <span class="period">Jun, 2018 - May, 2019</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Kongu Vellalar Matric. Hr. Sec. School</h3>
-                      <p class="description">Completed 10<sup>th</sup> grade on Science, Mathematics, Social Science, English, Tamil with 92%</p>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-left">
-                      <h4 class="company">Class 12<sup>th</sup></h4>
-                      <span class="period">Jun, 2020 - May, 2021</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Kongu Vellalar Matric. Hr. Sec. School</h3>
-                      <p class="description">
-                        Completed 12<sup>th</sup> grade on Computer Science, Physics, Chemistry, Mathematics, English, Tamil with 91%
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-left">
-                      <h4 class="company">BE - CSE</h4>
-                      <span class="period">Sept, 2021 - May, 2025</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">KPR Institute of Engineering and Technology</h3>
-                      <p class="description">Completed undergraduate degree in Computer science with core concepts of DSA, Computer Networks, Operating System, and DBMS with overall CGPA of 8.27</p>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-left">
-                      <h4 class="company">BE - CSE Hons(AIML)</h4>
-                      <span class="period">Jun, 2023 - Dec, 2024</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">KPR Institute of Engineering and Technology</h3>
-                      <p class="description">Learned Foundational Concepts of ML algorithms, Neural Networks, Convolutional Neural Network, Data Preprocessing, EDA, Feature Engineering for different Data like tables, Text Data, Time series and Image Dataset.</p>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-left">
-                      <h4 class="company">AI Software developer Trainee</h4>
-                      <span class="period">Sept, 2024 - May, 2025</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Abluva Pvt. Limited</h3>
-                      <p class="description">Gathered Production Level industrial expertise in working with Data Pipelines, Data Preprocessing and Engineering for ML models and Large language Models (LLMs)</p>
-                    </div>
-                  </div>
-
+          <div class="lanyard" data-aos="fade-up" data-aos-delay="100">
+            <div class="lanyard-strap"></div>
+            <div class="lanyard-inner">
+              <div class="lanyard-face lanyard-front">
+                <img src="assets/img/portfolio/CLIA.png" alt="CLIA Project Screenshot">
+                <div class="lanyard-overlay">
+                  <i class="bi bi-globe-americas"></i>
                 </div>
               </div>
-
-              
+              <div class="lanyard-face lanyard-back">
+                <h5 class="lanyard-title">CLIA — Command Line Intelligence Assistant</h5>
+                <p class="lanyard-desc">A standup summarizer of git commits for developers during daily meetings.</p>
+                <div class="lanyard-tags">
+                  <span class="lanyard-tag">Python</span>
+                  <span class="lanyard-tag">Git</span>
+                  <span class="lanyard-tag">AI</span>
+                </div>
+                <a href="https://github.com/Harshit26042004/CLIA-Command-Line-Intelligence-Assistance" class="lanyard-link" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
             </div>
           </div>
+
+          <div class="lanyard" data-aos="fade-up" data-aos-delay="200">
+            <div class="lanyard-strap"></div>
+            <div class="lanyard-inner">
+              <div class="lanyard-face lanyard-front">
+                <img src="assets/img/portfolio/TripWise.png" alt="TripWise Project Screenshot">
+                <div class="lanyard-overlay">
+                  <i class="bi bi-airplane-engines"></i>
+                </div>
+              </div>
+              <div class="lanyard-face lanyard-back">
+                <h5 class="lanyard-title">TripWise — AI-Powered Trip Organizing App</h5>
+                <p class="lanyard-desc">An AI-powered travel planning assistant that helps users plan trips effortlessly.</p>
+                <div class="lanyard-tags">
+                  <span class="lanyard-tag">AI</span>
+                  <span class="lanyard-tag">React</span>
+                  <span class="lanyard-tag">Firebase</span>
+                </div>
+                <a href="https://github.com/Harshit26042004/TripWise" class="lanyard-link" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lanyard" data-aos="fade-up" data-aos-delay="300">
+            <div class="lanyard-strap"></div>
+            <div class="lanyard-inner">
+              <div class="lanyard-face lanyard-front">
+                <img src="assets/img/portfolio/picture3.png" alt="RAGenerate Project Screenshot">
+                <div class="lanyard-overlay">
+                  <i class="bi bi-chat-left-text"></i>
+                </div>
+              </div>
+              <div class="lanyard-face lanyard-back">
+                <h5 class="lanyard-title">RAGenerate — AI Tutor System</h5>
+                <p class="lanyard-desc">An RAG-based chatbot that fetches documents and uses them for an intelligent tutoring system.</p>
+                <div class="lanyard-tags">
+                  <span class="lanyard-tag">Langchain</span>
+                  <span class="lanyard-tag">RAG</span>
+                  <span class="lanyard-tag">LLM</span>
+                </div>
+                <a href="https://github.com/Harshit26042004/RAGenerate" class="lanyard-link" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lanyard" data-aos="fade-up" data-aos-delay="400">
+            <div class="lanyard-strap"></div>
+            <div class="lanyard-inner">
+              <div class="lanyard-face lanyard-front">
+                <img src="assets/img/portfolio/Picture2.jpeg" alt="Climate Analysis Project Screenshot">
+                <div class="lanyard-overlay">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+              </div>
+              <div class="lanyard-face lanyard-back">
+                <h5 class="lanyard-title">Climate Analysis Dashboard</h5>
+                <p class="lanyard-desc">Climate temperature analysis across cities using neural networks.</p>
+                <div class="lanyard-tags">
+                  <span class="lanyard-tag">Python</span>
+                  <span class="lanyard-tag">TensorFlow</span>
+                  <span class="lanyard-tag">ML</span>
+                </div>
+                <a href="https://github.com/Harshit26042004/Climate-Analysis-Dash" class="lanyard-link" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
-
-    </section><!-- /Resume Section -->
-
-    <section id="projects" class="contact section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Projects</h2>
-        </div>
-
-        <div class="card-blocking">
-          <div class="card">
-            <img class="card-img-top" src="assets\img\portfolio\CLIA.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title"><b>CLIA — Command Line Intelligence Assistant</b></h5>
-              <p class="card-text">A Standup summarizer of git commits for developers for daily meetings</p>
-              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-                <a href="https://github.com/Harshit26042004/CLIA-Command-Line-Intelligence-Assistance" class="btn btn-outline">
-                  GitHub <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img class="card-img-top" src="assets\img\portfolio\TripWise.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title"><b>Trip Wise – AI-Powered Trip Organizing Application</b></h5>
-              <p class="card-text">Trip Wise is a smart, AI-powered travel planning assistant that helps users plan their trips effortlessly.</p>
-              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-                <a href="https://github.com/Harshit26042004/TripWise" class="btn btn-outline">
-                  GitHub <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img class="card-img-top" src="assets\img\portfolio\picture3.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title"><b>RAGenerate: AI Tutor System</b></h5>
-              <p class="card-text">An RAG based chatbot that fetch document and use it for tutoring system.</p>
-              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-                <a href="https://github.com/Harshit26042004/RAGenerate" class="btn btn-outline">
-                  GitHub <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="card">
-            <img class="card-img-top" src="assets\img\portfolio\Picture2.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title"><b>Climate Analysis Dash</b></h5>
-              <p class="card-text">Climate analysis temperature on different cities based on neural networks.</p>
-              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-                <a href="https://github.com/Harshit26042004/Climate-Analysis-Dash" class="btn btn-outline">
-                  GitHub <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-
+    <section id="contact" class="contact section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row g-5">
           <div class="col-lg-6">
-            <div class="content" data-aos="fade-up" data-aos-delay="100">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
               <h2 class="display-5 mb-4">Contact</h2>
-              <p class="lead mb-4">Get Connected...</p>
+              <p class="lead mb-4">Let's connect. Whether it's about AI, ML, or a collaboration opportunity, I'd love to hear from you.</p>
 
               <div class="contact-info mt-5">
                 <div class="info-item d-flex mb-3">
                   <i class="bi bi-envelope-at me-3"></i>
-                  <span>harshitharshit138@gmail.com</span>
+                  <span>harshit.subramanian26@gmail.com</span>
                 </div>
 
                 <div class="info-item d-flex mb-3">
@@ -337,23 +440,21 @@
 
                 <div class="info-item d-flex mb-4">
                   <i class="bi bi-geo-alt me-3"></i>
-                  <span>Karumathampatti, Coimbatore - 641 659, Tamil Nadu.</span>
+                  <span>6/311-B, 2nd West Street, Indra Nagar, Unjapalayam Pirivu, Karumathampatti, Coimbatore - 641 659, Tamil Nadu.</span>
                 </div>
 
-                <a href="https://maps.app.goo.gl/Mf8huMEH2iKRpCPz7" class="map-link d-inline-flex align-items-center">
+                <a href="https://maps.app.goo.gl/Mf8huMEH2iKRpCPz7" class="map-link d-inline-flex align-items-center magnetic" target="_blank" rel="noopener">
                   Open Map
                   <i class="bi bi-arrow-right ms-2"></i>
                 </a>
-
-
               </div>
             </div>
           </div>
 
           <div class="col-lg-6">
-            <div class="map-responsive" id="map">
+            <div class="map-responsive" data-aos="fade-up" data-aos-delay="100">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d626.3234339050164!2d77.16950062327041!3d11.101080274298662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDA2JzA0LjUiTiA3N8KwMTAnMTEuNSJF!5e1!3m2!1sen!2sin!4v1752037723935!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d626.3234339050164!2d77.16950062327041!3d11.101080274298662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m!2zMTHCsDA2JzA0LjUiTiA3N8KwMTAnMTEuNSJF!5e1!3m2!1sen!2sin!4v1752037723935!5m2!1sen!2sin"
                 width="600"
                 height="450"
                 style="border:0;"
@@ -362,36 +463,85 @@
                 referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
+
+            <form action="forms/contact.php" method="post" class="contact-form php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="col-12">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="col-12">
+                  <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary btn-submit">Send Message <i class="bi bi-send"></i></button>
+                </div>
+              </div>
+              <div class="loading">Sending message...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </form>
           </div>
 
         </div>
 
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="copyright">
+            <p>&copy; <span id="current-year"></span> Harshit S. All rights reserved.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="social-links">
+            <a href="mailto:harshit.subramanian26@gmail.com" class="magnetic"><i class="bi bi-envelope"></i></a>
+            <a href="https://github.com/Harshit26042004" class="magnetic"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/harshit-subramanian" class="magnetic"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <div class="credits">
+            <a href="https://github.com/Harshit26042004" target="_blank" rel="noopener">Harshit S</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Custom Components -->
+  <script src="assets/js/components/PreText.js"></script>
+  <script src="assets/js/components/DecryptedText.js"></script>
+  <script src="assets/js/components/TextPressure.js"></script>
+  <script src="assets/js/components/MagnetLines.js"></script>
+  <script src="assets/js/components/Lanyard.js"></script>
+  <script src="assets/js/components/InfiniteMenu.js"></script>
+  <script src="assets/js/components/ParticleTypography.js"></script>
+  <script src="assets/js/components/CursorLens.js"></script>
+  <script src="assets/js/components/RadarChart.js"></script>
+  <script src="assets/js/components/SplitTextLine.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 
 </body>
 
